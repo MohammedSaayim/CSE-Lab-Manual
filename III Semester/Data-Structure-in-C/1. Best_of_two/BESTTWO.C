@@ -1,12 +1,10 @@
 // Program to get the average of  two largest numbers
 #include <stdio.h>
-#include <conio.h>
 
-void main() {
+int main() {
     int a[100], n, i, l1, l2 = -999;
     float avg;
 
-    clrscr();
     printf("Enter the number of elements\n");
     scanf("%d", &n);
 
@@ -33,6 +31,6 @@ void main() {
     printf("Largest Number is: %d\nSecond largest Number is: %d", l1, l2);
     avg = (float)(l1 + l2) / 2;
     printf("\nAverage of Best two Number is: %f", avg);
-    getch();
+    
 
 }

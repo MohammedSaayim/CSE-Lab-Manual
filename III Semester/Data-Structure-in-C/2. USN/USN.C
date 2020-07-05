@@ -1,17 +1,16 @@
-// Program to sort USN
+    // Program to sort USN
 #include <stdio.h>
 #include <conio.h>
 
-void main() {
+int main() {
     int i, j, n;
     // Structure of student
     struct stud {
         int USN, sem;
         char name[30];
     }
-    s[10], t;
+    s[10], temp;
 
-    clrscr();
 
     // Retrieving info of students
     printf("Enter the number of students\n");
@@ -30,9 +29,9 @@ void main() {
     for (i = 0; i < n - 1; i++)
         for (j = 0; j < n - 1 - i; j++) {
             if (s[j].USN > s[j + 1].USN) {
-                t = s[j];
+                temp = s[j];
                 s[j] = s[j + 1];
-                s[j + 1] = t;
+                s[j + 1] = temp;
             }
         }
 
